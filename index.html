@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9eafd2883a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>R1D001 - Simple Personal Website</title>
+    <title>Simple Personal Website</title>
 </head>
 <body>
     <nav>
-        <div class="nav-left">
-            <p>Jaydon</p>
-            <p class="bold">Arcand</p>
-        </div>
-        <div class="nav-right">
-            <div class="nav-menu">
-                <p>Contact me</p>
-                <p>About me</p>
-                <p>My Works</p>
+        <div class="nav-container">
+            <div class="nav-left">
+                <p>Jaydon</p>
+                <p class="bold">Arcand</p>
             </div>
-            <div class="my-work-btn">
-                <!-- icon -->
-                <a href="#work-id"><i class="fas fa-briefcase"></i>
-                 my works</a>
-            </div>
-            <div class="hamburger-icon">
-                <i class="fas fa-hamburger"></i>
-                <!-- hamburger icon -->
+            <div class="nav-right">
+                <div class="nav-menu">
+                    <p>Contact me</p>
+                    <p>About me</p>
+                    <p>My Works</p>
+                </div>
+                
+                <div class="btn">
+                    <a href="#work-id" class="link"><i class="fas fa-briefcase"></i>
+                        my works</a>
+                </div>
+                
+                <div class="hamburger-icon">
+                    <i class="fas fa-hamburger"></i>
+                </div>
             </div>
         </div>
     </nav>
@@ -38,10 +40,12 @@
                 <p>Welcome to my world</p>
                 <div class="avatar">
                     <!-- <img src="" alt=""> -->
+                    <div class="circle">
+                         <img src="./img/profile-picture.jpg" alt="jaydon arcand">
+                    </div>
                 </div>
-                <!-- circle avatar -->
-                <h1>Jaydon</h1>
-                <h1>Arcand</h1>
+                <p class="name">Jaydon</p>
+                <p class="name bold">Arcand</p>
                 <p>Professional Unknown </p>
             </div>
         </div>
@@ -49,64 +53,81 @@
     <!-- ABOUT ME -->
     <section id="about-me">
         <div class="about-container">
-            <div class="about-btn">
-                <!-- icon -->
-                <p><i class="fas fa-address-card"></i>about-me</p>
+            <div class="btn">
+                <a href="#about-me" class="link" ><i class="fas fa-address-card"></i>about-me</a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo quae! Adipisci quas nihil, inventore, voluptatibus quis, asperiores quod ad ut sunt ducimus reiciendis aperiam libero repudiandae molestiae atque optio!</p>
+            <p class="description-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo quae! Adipisci quas nihil, inventore, voluptatibus quis, asperiores quod ad ut sunt ducimus reiciendis aperiam libero repudiandae molestiae atque optio!</p>
         </div>
     </section>
     <!-- MY WORKS -->
     <section id="work-id">
-        <div class="my-work-btn">
-            <!-- icon -->
-            <p>my works</p>
+        <div class="work-container">
+            <div class="btn">
+                <a href="#work-id" class="link"><i class="fas fa-briefcase"></i>
+                my works</a>
+            </div>
+            <section class="all-works-container">
+                <div class="work">
+                    <div class="work-headline">
+                        <div class="work-img"><div class="square"></div></div>
+                        <div >
+                            <p>Extras</p>
+                            <p class="bold">Work Title</p>
+                            <p>Timeframe - timeframe</p>
+                        </div>
+                    </div>
+                    <p class="description-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
+                    <hr>
+                </div>
+                <div class="work">
+                    <div class="work-headline">
+                        <div class="work-img"><div class="square"></div></div>
+                        <div>
+                            <p>Extras</p>
+                            <p class="bold">Work Title</p>
+                            <p>Timeframe - timeframe</p>
+                        </div>
+                    </div>
+                    <p class="description-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
+                    <hr>
+                </div>
+                <div class="work">
+                    <div class="work-headline">
+                        <div class="work-img"><div class="square"></div></div>
+                    <div>
+                        <p>Extras</p>
+                        <p class="bold">Work Title</p>
+                        <p>Timeframe - timeframe</p>
+                    </div>
+                    </div>
+                    <p class="description-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
+                    <hr>
+                </div>
+                <div class="work">
+                    <div class="work-headline">
+                        <div class="work-img">
+                            <div class="square"></div>
+                        </div>
+                        <div>
+                            <p>Extras</p>
+                            <p class="bold">Work Title</p>
+                            <p>Timeframe - timeframe</p>
+                        </div>
+                    </div>
+                    <p class="description-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
+                    <hr>
+                </div>
+            </section>
         </div>
-        <section class="works-container">
-            <div class="work">
-                <div class="work-headline">
-                    <div class="work-img"></div>
-                    <p>Extras</p>
-                    <p>Work Title</p>
-                    <p>Timeframe - timeframe</p>
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
-            </div>
-            <div class="work">
-                <div class="work-headline">
-                    <div class="work-img"></div>
-                    <p>Extras</p>
-                    <p>Work Title</p>
-                    <p>Timeframe - timeframe</p>
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
-            </div>
-            <div class="work">
-                <div class="work-headline">
-                    <div class="work-img"></div>
-                    <p>Extras</p>
-                    <p>Work Title</p>
-                    <p>Timeframe - timeframe</p>
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
-            </div>
-            <div class="work">
-                <div class="work-headline">
-                    <div class="work-img"></div>
-                    <p>Extras</p>
-                    <p>Work Title</p>
-                    <p>Timeframe - timeframe</p>
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, natus eaque expedita ex dicta libero? Fugiat quos aspernatur rem omnis. Beatae non cum ducimus totam assumenda aliquid quos vitae quia!</p>
-            </div>
-        </section>
     </section>
     <!-- CONTACT ME -->
-    <section>
-    <p>Please feel free to reach me up by clicking the button below!</p>
-        <div class="contact-btn">
-            <!-- icon -->
-            <p>contact-me</p>
+    <section id="contact-me">
+        <div class="contact-container">
+            <p>Please feel free to reach me up by clicking the button below!</p>
+            <div class="btn">
+                <a href="#contact-me" class="link"><i class="fas fa-mobile"></i>
+                    contact-me</a>
+                </div>
         </div>
     </section>
 </body>
