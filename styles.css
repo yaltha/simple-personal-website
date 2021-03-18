@@ -94,18 +94,16 @@ nav {
 
 /* MAIN */
 .container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  text-align: center;
 }
-.container .contents {
-  /* position: absolute;
-  top: 30%;
-  left: 10%; */
-  margin-top: 5em;
-  margin-left: 3em;
-}
-.main {
+
+.main_name {
   font-size: 4em;
+  line-height: 0;
 }
 
 .circle img {
@@ -186,4 +184,115 @@ nav {
 
 .contact-btn {
   cursor: pointer;
+}
+
+/* RESPONSIVE MEDIA */
+
+@media (min-width: 1024px) {
+  .description-paragraph {
+    line-height: 2em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  nav {
+    margin: 0 3em;
+  }
+  .main_name {
+    font-size: 5em;
+  }
+  .circle img {
+    width: 200px;
+    height: 200px;
+  }
+  .about-container,
+  .work-container {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+  .all-works-container {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  .work {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .btn {
+    border-radius: 10px;
+    padding: 0.5em;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  }
+  .link {
+    /* a tag */
+    font-size: 1.2em;
+    font-weight: 700;
+    color: inherit;
+  }
+  .description-paragraph {
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  nav {
+    margin: 0 6em;
+    padding: 2em;
+  }
+  .nav-left p {
+    font-size: 1.5em;
+  }
+
+  .nav-menu {
+    margin-right: 1.2em;
+  }
+  .nav-right .hamburger-icon {
+    display: none;
+  }
+  .nav-right .nav-menu {
+    display: flex;
+    color: inherit;
+    justify-content: space-around;
+  }
+  .nav-right .nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    margin: 0 2em;
+    font-size: 1.2em;
+  }
+  .nav-right .nav-menu a:hover {
+    font-weight: 900;
+  }
+
+  .main_name {
+    font-size: 6em;
+    line-height: 0;
+  }
+  .main-text {
+    font-size: 2em;
+  }
+  .circle img {
+    width: 250px;
+    height: 250px;
+  }
+  .about-container,
+  .work-container {
+    padding: 3em;
+    max-width: 1200px;
+    margin: 2em auto;
+  }
+  .all-works-container {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  .work {
+    padding: 1em;
+  }
+
+  .contact-container p {
+    font-size: 1.5em;
+  }
 }
