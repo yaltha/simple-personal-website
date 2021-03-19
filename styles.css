@@ -81,6 +81,21 @@ nav {
 
 .nav-right .nav-menu {
   display: none;
+  position: absolute;
+  top: 4em;
+  right: 5em;
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid #202020;
+}
+
+.nav-right .nav-menu a {
+  margin: 2em;
+  text-decoration: none;
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: inherit;
 }
 
 .nav-right .my-work-btn {
@@ -200,6 +215,7 @@ nav {
   .main_name {
     font-size: 5em;
   }
+
   .circle img {
     width: 200px;
     height: 200px;
@@ -250,17 +266,25 @@ nav {
   .nav-right .hamburger-icon {
     display: none;
   }
+
+  .nav-right .btn {
+    margin-right: 3em;
+  }
+
   .nav-right .nav-menu {
-    display: flex;
+    display: contents;
+    top: 0;
+    right: 0;
+    position: relative;
     color: inherit;
-    justify-content: space-around;
+    border: none;
   }
   .nav-right .nav-menu a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     margin: 0 2em;
-    font-size: 1.2em;
   }
   .nav-right .nav-menu a:hover {
     font-weight: 900;
